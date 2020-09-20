@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+<ImageView
+    android:id="@+id/iv_pic"
+    android:src="@drawable/image"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_centerInParent="true"/>
+    <EditText
+        android:text="左边"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:text="右边"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:text="上边"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:text="下边"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
